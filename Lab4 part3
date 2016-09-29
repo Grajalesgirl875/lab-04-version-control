@@ -1,0 +1,219 @@
+Lab - Odds and Ends
+==========
+Follow the instructions line-by-line.  
+
+* Type in the commands as is, but ignore the beginning prompt.  
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.  
+* "No output" or "nothing happens" are valid answers to any of the questions.
+==========
+
+==========
+1. Open a new terminal window.
+[NO OUTPUT]
+----------
+==========
+2. In your home directory, start editing a text file called temp.txt using nano.
+
+Write the command you used to do this below.
+----------
+nano temp.txt
+
+==========
+3. Open another terminal
+
+[NO OUTPUT]
+----------
+==========
+3. In this terminal, show (list) all running processes / programs.
+
+Write the command that you used to do this, and the last two lines of output.
+----------
+ls -al
+
+drwxr-xr-x   3 student  staff     102 Sep  7 12:12 stuff
+drwxr-xr-x   2 student  staff      68 Aug 22 14:23 xgen
+=========
+4. Run the same command, but look for a specific process.  (It's the version of the command that has | grep ...).  Look for the program that you started to edit a file, nano.
+
+Write the command that you used to do this, and all of the output.
+----------
+ ls -al
+
+drwxr-xr-x+ 47 student  staff    1598 Sep 29 15:58 .
+drwxr-xr-x   7 root     admin     238 Aug 22 14:23 ..
+-rw-------   1 student  staff       3 Aug 22 14:23 .CFUserTextEncoding
+-rw-r--r--@  1 student  staff   10244 Sep 23 11:38 .DS_Store
+drwx------   2 student  staff      68 Sep 29 15:58 .Trash
+-rw-------   1 student  staff       0 Aug 22 15:08 .Xauthority
+drwxr-x--x   4 student  staff     136 Aug 22 14:50 .adobe
+drwxr-xr-x   2 student  staff      68 Aug 22 14:57 .android
+-rw-r--r--   1 student  staff    3655 Sep 29 17:05 .bash_history
+-rw-r--r--   1 student  staff      62 Aug 22 14:43 .bash_profile
+drwxr-xr-x  42 student  staff    1428 Sep 29 17:05 .bash_sessions
+drwxr-xr-x   4 student  staff     136 Aug 22 15:07 .cache
+drwxr-xr-x   5 student  staff     170 Aug 22 15:10 .config
+-rw-r--r--   1 student  staff    2876 Aug 24 14:06 .eaglerc
+drwxr-xr-x   3 student  staff     102 Aug 22 15:21 .eclipse
+-rwxr-xr-x   1 student  staff      37 Aug 22 14:58 .flexlmrc
+drwxr-xr-x   9 student  staff     306 Sep 29 16:39 .git
+drwx------   2 student  staff      68 Aug 22 15:07 .gnome2
+drwxr-xr-x   3 student  staff     102 Aug 22 15:07 .local
+drwxr-xr-x   3 student  staff     102 Aug 22 14:45 .macports
+drwxr-xr-x   3 student  staff     102 Aug 22 15:10 .matlab
+drwxr-xr-x   6 student  staff     204 Aug 22 15:14 .oracle_jre_usage
+-rw-------   1 student  staff    1024 Aug 22 15:08 .rnd
+drwxr-xr-x   6 student  staff     204 Aug 22 15:10 .subversion
+drwxr-xr-x   4 student  staff     136 Aug 22 15:02 .thumbnails
+drwxr-x---   2 student  staff      68 Aug 22 14:23 Adlm
+drwxr-xr-x   3 student  staff     102 Aug 22 14:23 Adobe
+drwxr-xr-x   4 student  staff     136 Aug 22 14:23 Applications
+drwx------   7 student  staff     238 Sep 29 16:29 Desktop
+drwx------+ 22 student  staff     748 Sep 28 10:37 Documents
+drwx------+  4 student  staff     136 Sep 28 18:59 Downloads
+drwx------@ 60 student  staff    2040 Aug 22 14:34 Library
+drwxr-xr-x   2 student  staff      68 Aug 22 14:23 MPLABXProjects
+drwx------   7 student  staff     238 Aug 22 15:07 Movies
+drwx------   8 student  staff     272 Aug 22 14:23 Music
+drwx------   5 student  staff     170 Aug 22 14:23 Pictures
+drwxr-xr-x   5 student  staff     170 Aug 22 14:23 Public
+drwxr-xr-x   5 student  staff     170 Aug 22 14:23 Things
+drwxrwxr-x   3 student  staff     102 Feb  6  2013 __MACOSX
+drwxr-xr-x   3 student  staff     102 Aug 22 14:23 isus
+drwxr-xr-x   6 student  staff     204 Aug 31 12:40 mtec1002
+drwxr-xr-x   8 student  staff     272 Sep  7 12:16 mtec1002-lab-02
+-rw-r--r--   1 student  staff  957886 Sep  7 12:05 mtec1002-lab-02.zip
+-rw-r--r--   1 student  staff       0 Aug 22 14:23 pymel.log
+-rw-r--r--   1 student  staff    9116 Sep  7 12:19 secret.tar.gz
+drwxr-xr-x   3 student  staff     102 Sep  7 12:12 stuff
+drwxr-xr-x   2 student  staff      68 Aug 22 14:23 xgen
+==========
+5. Stop (kill) the process that's called nano "temp.txt" by using the process id shown in the output of your previous command (first number after user name).
+
+----------
+
+
+==========
+6. Go to your other terminal window.  What happened to nano?  What was the message on the screen?
+
+----------
+nothing happens
+
+==========
+7. Close the terminal window that nano was in, and go back to the terminal where you ran ps.
+
+[NO OUTPUT]
+----------
+
+
+==========
+8. Now... using nano, create a shell script in your home directory called hello.sh.  It should contain the following text exactly:
+
+#!/bin/bash
+echo "hi there!"
+
+Quit and save when you're done.
+
+What command did you use to do this?
+----------
+nano temp.txt
+
+
+==========
+9. Change the permissions (modify) on hello.sh so that the *user* (u) can *execute* (x) it: 
+
+Write the commands that you used to do this below.
+----------
+chmod temp.txt
+
+==========
+10. Run your script (hello.sh).
+
+How did you do this?  What was the output?
+----------
+-rw-r--r--  1 student  staff  55 Sep 29 17:18 temp.txt
+==========
+11. Change to the root directory.  Try running your script again (hello.sh).  What was the output (if there's an error, write it out)?
+----------
+nothing happens
+
+==========
+12. Now trying using the full, absolute path to your script (that is, starting with /...).  What did you write in?  What did it do?
+----------
+nothing happens
+
+==========
+13.  Go back to the directory that your hello.sh script was in.  What command did you use to change to this directory? 
+----------
+the Cd command
+
+==========
+14. Type in the following command:
+
+echo $PATH
+
+Write down the output of this command
+----------
+/opt/local/bin:/Applications/anaconda/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+==========
+15. Type in the following command to show all environment variables:
+
+env
+
+Write down the last two lines of output for this command
+----------
+AVID_BSM_SOCKET=/private/tmp/com.apple.launchd.7vHnBhWjxx/MyListenerSocket
+LOGNAME=student
+DISPLAY=/private/tmp/com.apple.launchd.c0THNcPDGY/org.macosforge.xquartz:0
+_=/usr/bin/env
+==========
+16. Set your PATH to include your home directory.  Do the following (substituting student or username for professor)
+
+PATH=$PATH:/Users/professor
+
+Now check your path again.
+
+echo $PATH
+
+Write down the output of the last command.  It should include your home folder.
+----------
+nothing happens
+
+==========
+17.  Go back to root (/)
+
+Try running your script simply by typing
+
+hello.sh
+
+It should work now!  What is the output?
+----------
+nothing happens
+
+==========
+18.  Save this file in the repository that you created from parts 1 and 2.
+
+Add and commit it to your local repository and push to the remote repository.  Check github to see that your work was submitted.
+----------
+
+
+==========
+19.  Optional - Try writing this shell script!
+
+In your repository, create an executable shell script called make_5_files that creates 10 files in the directory that it's called in.  The file names should be:
+myfile1.txt
+myfile2.txt
+.
+myfile10.txt
+
+Use a for loop to do this.  Add and save in your repository, push to the remote.
+----------
+
+
+==========
+20.  Optional - Try writing this shell script!
+
+In your repository, create an executable shell script called say_twice.  It should take one argument - a filename.  It will cat out the contents of that file twice, with a row of dashes between each (use cat, echo... then cat again).  Create a test file calle foo.txt ... that contains foo, bar and baz... each on separate lines.
+
+Add and save in your repository, push to the remote.
+
+----------
